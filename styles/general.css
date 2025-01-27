@@ -1,5 +1,6 @@
 * {
   font-family: 'League Spartan', sans-serif;
+  width: auto;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -239,7 +240,7 @@ p
   font-size: 15px
 }
 
-@media (max-width: 1000px)
+@media (max-width: 1200px)
 {
   .project-grid
   {
@@ -247,7 +248,15 @@ p
   }
 }
 
-@media (min-width: 0px) and (max-width: 999px)
+@media (max-width: 1200px)
+{
+  .project-section
+  {
+    height: 180vh;
+  }
+}
+
+@media (max-width: 800px)
 {
   .project-grid
   {
@@ -255,11 +264,11 @@ p
   }
 }
 
-@media (max-width: 1000px)
+@media (max-width: 800px)
 {
   .project-section
   {
-    height: 340vh;
+    height: 320vh;
   }
 }
 
@@ -299,12 +308,4 @@ p
 .contact-text
 {
   color: white;
-}
-
-@media (max-width: 600px)
-{
-  section
-  {
-     width: auto;
-  }
 }
