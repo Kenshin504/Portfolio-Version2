@@ -6,6 +6,11 @@
   margin: 0;
 }
 
+body, html
+{
+  overflow-x: hidden;
+}
+
 p
 {
   font-size: 25px;
