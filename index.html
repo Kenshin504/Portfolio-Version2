@@ -68,7 +68,7 @@
         <section id="about-section" class="about-section">
           <h1 class="section-title">About Me</h1>
           <div class="info-grid">
-            <div class="info-card">
+            <div class="info-card left" id="animate-on-scroll">
               <img class="info-icon" src="images/book.svg">
               <h2 class="info-title">Education Background</h2>
               <ul>
@@ -83,7 +83,7 @@
               </ul>
             </div>
 
-            <div class="info-card">
+            <div class="info-card right" id="animate-on-scroll">
               <img class="info-icon" src="images/skills.svg">
               <h2 class="info-title">Skills</h2>
               <ul>
@@ -192,20 +192,22 @@
         <footer class="contact-section" id="contact-section">
           <h2 class="contact-text">Get in Touch</h2>
           <nav class="contact-grid">
-            <a href="https://www.facebook.com/ryan.lumbis.3/" target="_blank">
-              <img class="contact-icons" src="images/facebook.svg">
-            </a>
-
-            <a href="mailto:ryanlumbis712@gmail.com" target="_blank">
-              <img class="contact-icons" src="images/gmail.svg">
-            </a>
-
-            <a href="https://github.com/Kenshin504" target="_blank">
-              <img class="contact-icons" src="images/github.svg">
-            </a>
+            <button onclick="facebook()" class="button-contacts" aria-label="Facebook">
+              <img class="contact-icons" src="images/facebook.svg" alt="Facebook Icon">
+            </button>
+          
+            <button onclick="gmail()" class="button-contacts" aria-label="Gmail">
+              <img class="contact-icons" src="images/gmail.svg" alt="Gmail Icon">
+            </button>
+          
+            <button onclick="github()" class="button-contacts" aria-label="GitHub">
+              <img class="contact-icons" src="images/github.svg" alt="GitHub Icon">
+            </button>
           </nav>
         </footer>
     </main>
 
   </body>
 </html>
+
+<script src="script/script.js"></script>

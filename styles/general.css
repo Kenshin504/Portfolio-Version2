@@ -127,8 +127,8 @@ p
   margin-bottom: 40px;
 }
 
-.info-card
-{
+.info-card {
+  opacity: 0;
   background-color: rgb(37, 36, 36);
   list-style-position: inside;
   padding: 30px 30px;
@@ -140,6 +140,42 @@ p
   flex-direction: column;
   align-items: center;
   transition: box-shadow 0.3s ease;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+/* Slide from left */
+.info-card.left {
+  animation-name: slideFadeLeft;
+}
+
+/* Slide from right */
+.info-card.right {
+  animation-name: slideFadeRight;
+}
+
+/* Keyframes for left slide fade-in */
+@keyframes slideFadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Keyframes for right slide fade-in */
+@keyframes slideFadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .info-card:hover
@@ -313,4 +349,12 @@ p
 .contact-text
 {
   color: white;
+}
+
+.button-contacts 
+{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
 }
