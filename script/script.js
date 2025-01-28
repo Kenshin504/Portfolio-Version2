@@ -12,3 +12,14 @@ function github()
 {
   window.open('https://github.com/Kenshin504');
 }
+
+window.onscroll = function() 
+{
+  var scrollBar = document.getElementById('scroll-bar');
+  var totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = window.scrollY;
+  var scrollPercentage = (scrolled / totalHeight) * 100;
+  
+  scrollBar.style.width = scrollPercentage + '%';
+};
+  
