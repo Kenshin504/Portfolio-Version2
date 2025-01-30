@@ -90,6 +90,7 @@ p
 
 #short-intro
 {
+  text-align: justify;
   max-width: 400px;
   width: 100%;
   color: rgb(202, 202, 202);
@@ -257,7 +258,7 @@ p
 .card-top
 {
   text-align: center;
-  background: linear-gradient(45deg, rgb(192, 190, 190), rgb(226, 222, 222));
+  background: linear-gradient(45deg, rgb(192, 190, 192), rgb(226, 222, 222));
   width: 100%; 
   height: 100%;
   padding: 10px 20px;
@@ -276,9 +277,11 @@ p
 
 .project-info
 {
-  width: 300px;
+  width:100%;
+  max-width: 300px;
   padding: 10px 15px;
-  font-size: 15px
+  font-size: 15px;
+  text-align: justify;
 }
 
 @media (max-width: 1200px)
@@ -309,7 +312,7 @@ p
 {
   .project-section
   {
-    height: 320vh;
+    height: 340vh;
   }
 }
 
